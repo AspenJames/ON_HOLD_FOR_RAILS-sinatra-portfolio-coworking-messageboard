@@ -1,1 +1,3 @@
-# board controller
+class BoardController < ApplicationController
+
+end

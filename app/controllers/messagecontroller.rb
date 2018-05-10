@@ -1,1 +1,3 @@
-# message controller
+class MessageController < ApplicationController
+
+end
