@@ -11,35 +11,35 @@
    - has_many :boards, through: :messages
 
 * Messages:
- - Content
- - user_id
- - board_id
- - belongs_to :user
- - belongs_to :board
+   - Content
+   - user_id
+   - board_id
+   - belongs_to :user
+   - belongs_to :board
 
 * Boards:
- - Location/room
- - has_many :messages
- - has_many :users, through: :messages
+   - Location/room
+   - has_many :messages
+   - has_many :users, through: :messages
 
 ## Controllers
 
 * ApplicationController
- - index: list boards
- - signup/login/logout
+   - index: list boards
+   - signup/login/logout
 
 * UserController
- - index: list users
- - slugifiable
- - show: individual user's messages
+   - index: list users
+   - slugifiable
+   - show: individual user's messages
 
 * BoardController
- - index: list boards
- - show: individual board's messages
+   - index: list boards
+   - show: individual board's messages
 
 * MessageController
- - index: list messages
- - new/edit/delete
+   - index: list messages
+   - new/edit/delete
 
 ## Specifications
 
