@@ -3,12 +3,12 @@
 ## Models
 
 * Users:
- - Name
- - Username 
- - Email 
- - Password 
- - has_many :messages
- - has_many :boards, through: :messages
+   - Name
+   - Username
+   - Email
+   - Password
+   - has_many :messages
+   - has_many :boards, through: :messages
 
 * Messages:
  - Content
@@ -18,13 +18,13 @@
  - belongs_to :board
 
 * Boards:
- - Location/room 
+ - Location/room
  - has_many :messages
  - has_many :users, through: :messages
 
 ## Controllers
 
-* ApplicationController 
+* ApplicationController
  - index: list boards
  - signup/login/logout
 
@@ -33,7 +33,7 @@
  - slugifiable
  - show: individual user's messages
 
-* BoardController 
+* BoardController
  - index: list boards
  - show: individual board's messages
 
@@ -47,5 +47,5 @@
  - Users can only edit or delete their own messages
  - Users cannot post a new message unless logged in
  - Flash messages used to deliver "error messages"
- - Users can log out gracefully 
+ - Users can log out gracefully
  - Routes, redirects, and renders follow RESTful convention
